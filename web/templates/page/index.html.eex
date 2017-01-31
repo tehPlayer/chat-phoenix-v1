@@ -1,0 +1,10 @@
+<div id="messages">
+  <%= for message <- @messages do %>
+    <p><a href='#'>[<%= message.author %>]</a>&nbsp; <%= message.body %></p>
+  <% end %>
+</div>
+<div id="form">
+  <input id="author" type="text" />
+  <input id="body" type="text" />
+  <button id="submit">Wyślij</button>
+</div>
